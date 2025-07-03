@@ -7,17 +7,74 @@
 }
 
 
-body {
+body  {
     background-color: rgb(245, 239, 230);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-    padding: 10px 0px;
+hr {
+   border: 1px solid #00000065;
 }
 
-h2, h3 {
-    padding: 4px 0px;
+p {
+    padding: 10px 0px;
+    font-size: 1.6em;
+    font-weight: 300;
+    text-indent: 10px;
+}
+
+blockquote {
+    font-size: 1.6em;
+    font-weight: 400;
+    text-indent: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 8px;
+}
+
+.caption {
+    font-size: 2em;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    text-align: left;
+    overflow-y: auto;
+    text-align: right;
+}
+
+ aside a.active {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding-top: 5px;
+}
+
+a:hover {
+    color: #ee7f6b;
 }
 
 header {
@@ -59,7 +116,35 @@ main > article > h1 {
     font-size: 2em;
 }
 
-main > article > p {
-    font-size: 1.3em;    
-} 
-    
+table {
+    border-collapse: collapse;
+    padding: 10px;
+    min-width: 200px;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#side-color-1 {
+    border-left: 5px solid rgb(255, 0, 0);
+}
+
+#side-color-2 {
+    border-left: 5px solid rgb(9, 255, 9);
+}
+
+#side-color-3 {
+    border-left: 5px solid rgb(2, 238, 255);
+}
+
+#side-color-4 {
+    border-left: 5px solid yellow;
+}
+
+#side-color-5 {
+    border-left: 5px solid rgb(255, 9, 202);
+}
+
+
