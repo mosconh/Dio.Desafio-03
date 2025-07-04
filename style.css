@@ -8,12 +8,13 @@
 
 
 body  {
-    background-color: rgb(245, 239, 230);
+    background-color: rgb(252, 251, 251);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 hr {
    border: 1px solid #00000065;
+
 }
 
 p {
@@ -78,7 +79,6 @@ a:hover {
 }
 
 header {
-    border: 1px solid black;
     width: 100vw;
     display: flex;
 }
@@ -96,7 +96,6 @@ header > img {
 
 
 main  {
-    border: 1px solid black;
     display: flex;
     margin: 10px;
 }
@@ -106,9 +105,12 @@ main > section {
     width: 150px;
 }
 
+main > section > a {
+    color: black;
+}
+
 main > article {
     width: 100%;
-    border: 1px solid black;
     padding: 0px 20px;
 }
 
@@ -116,10 +118,18 @@ main > article > h1 {
     font-size: 2em;
 }
 
+figure {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
 table {
     border-collapse: collapse;
     padding: 10px;
     min-width: 200px;
+    display: block;
 }
 
 tr, th, td {
@@ -128,15 +138,15 @@ tr, th, td {
 }
 
 #side-color-1 {
-    border-left: 5px solid rgb(255, 0, 0);
+    border-left: 5px solid #ff0000;
 }
 
 #side-color-2 {
-    border-left: 5px solid rgb(9, 255, 9);
+    border-left: 5px solid #09ff09;
 }
 
 #side-color-3 {
-    border-left: 5px solid rgb(2, 238, 255);
+    border-left: 5px solid #02eeff;
 }
 
 #side-color-4 {
@@ -144,7 +154,23 @@ tr, th, td {
 }
 
 #side-color-5 {
-    border-left: 5px solid rgb(255, 9, 202);
+    border-left: 5px solid #ff09ca;
 }
 
+#side-color-6 {
+    border-left: 5px solid #4b00fa;
+}
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    list-style: none;
+    padding-top: 10px;
+    gap: 10px;
+}
